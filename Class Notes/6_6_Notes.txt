@@ -1,0 +1,62 @@
+**Working with Unity**
+easy to make platform style game world 
+2018.3f2
+Game tab in relation to a camera 
+Scene view, entire simulation
+Inspect tab gives you everything about the object
+Typically have folders in Assets, don't usually put things in the root folder
+Leave .META files alone
+
+Things are Game Object, Scripts are the behaviors
+RMB, create empty, F2 dialog box to rename things or in inspector tab
+Find a sprite: download image, drag into Assets 
+Inside player, create sprite render and drag image into it
+Collider: box collider 2d,add component, want bounds of box to be as tight as possible
+Make ground: 
+	create 3d cube, (2d and 3d don't interact with each other),take off 3d collider and add 2d, click on cube and qwerty is quick access tools 
+	T lets you control square shape object: resize box visual
+Moving: 
+	Change it over time: add component, simple name like mover, new script, create and add, 
+		opens to generic unity script
+		start runs right when object appears in world 
+		Update is called once per graphical frame
+		Input is a static class in the unity engine that give yes or no
+	Tie change into input from user: 
+	Position, velocity: use Vector3 "name" 
+	Vector3.right gives 1.00
+	crtl + b to build 
+	atomic data types: serializable, bool, integers, float, string  will show up in inspector
+	tinker with value in speed to change frame rates
+	unity doesn't save values if you change during simulation 
+Gravity: 
+	Physics engine 
+	Rigid body, typical body used to interact with physics engine
+	Shift click all objects instead of doing it individually and add rigid body 
+	Lock the ground, 
+	
+Theory 
+	prefab: object that we treat as assest, throw in assest folder and allows you to make a lot of copies of an object, a change to the prefab changes all those copies from the prefab
+	this refers to the script you are working on 
+	this.gameobject points to game object its associated to 
+	this.transform is where positions are stored 
+	Fixed Update: fires every physics frame, changing physics things, want it to change at the same interval regardless of frame rate, doesn't play well with input class
+	Update: every graphical frame, changing graphics and getting fixed input 
+	input from update save it to a variable and then actually move it in fixed update
+	
+	mess with varibles in inspector by making it public which lets you mess with things while the simulation is moving 
+	null reference exception: pointer that isn't pointing to anything, so make the variable public and assign in inspector or inside of start create myFloats = new List<float>(); if its private 
+	member extraction: click and drag or hitting the bullseye 
+	
+	graphics go left to right and down, like reading a book
+	mappable keys, would need to look up
+	GameObject is the toolbox for finding objects in the game
+	var lets you put something on the right hand side and automatically asigns said type to the left hand size 
+	Instatiate: creates gameobject 
+	
+	lefthanded coord system: point thumb in position, it will rotate where you fingers point
+	z is into the screen 
+	Create an object like person and put all the objects that make it up into that object
+		lets you rotate and scale everything all at once 
+		
+	
+	

@@ -1,0 +1,118 @@
+More questions that are open ended, more of an art class than technical 
+Unity and C#
+Tests are giant canvas quizzes: multiple, open: open note book don't have to come to class. Won't be simple regurgatation questions
+	more analytical, compare contrast ideas, 
+	48hr period to take it. Have about 2hrs then test closes and submits
+Reference where things came from 
+
+
+Ch.1 
+*Game Definitions: 
+1. voluntary attempt to overcome unneccessary obstacles
+	Ex. D&D
+2. Series of interesting decisions
+	Interesting: multiple valid options, each option has pos and neg potential, outcomes are predictable but not guaranteed
+		relies on human capacity for prediction 
+			ex tik-tac-toe predictable
+			brick breaker is interesting because you can broadly predict but not for sure 
+		depending on how good you are at prediction determines if its a game or not
+	interacting with AI may be a game because it may be interesting to see how it interacts
+3. more based on tabletop: closed formal system that engages players in a structured confilic and resolves its uncertainty in an unequal outcome
+	formal elements: rules, procedures, resources, outcomes, boundaries, objectives
+	solves  many problems with def 1. 
+	the uncertainty is can I create whats in my head with what I've got 
+4. problem solving activity approached with a playful attitude
+	Lusory attitude: wanting to do something for fun, 
+		Ex. Golf, serious attitude would be to just put the ball in the hole yourself not using clubs or counting strokes 
+	lusory behavior in a game is directly in the game, you can't solve it by a serious attitude
+		modality: how you play the game, Ex. Controller 
+	Playful attitude: is subjective, 
+		playing to simply rank up (league) even though you're having a bad time mimics more def 1 and 2. 
+	Don't like def, because if you stop having fun its no longer a game
+5. system of rules in which agents compete by making ambiguous, endogenously meanginful decisions 
+	Endogenously meanginful: has a noticeable effect on the game state
+		Ex. Playing a card in like Magic, or Yu-gi-oh
+		some games will reset progress in order to regain health, mana, etc
+			Ex. Pokemon: healing the consequences of fighting get wipe away
+	a race could be a game by this, as long as two people are present and are making decisions
+Def important because you need to know the domain and range of our deductions
+	Domain: what we're allowed to look at 
+	Range: where you can apply those deductions
+	You can find commonalities among the definitions 
+		Humans desire structured conflict, experience of different situtations, excitement 
+	People want the illusion of failure
+	Audiences expect fun, mental stimulation, escapism 
+*Iteration and Modifying the rules
+Game design is an iterative process because there are a lot of things that need audience feedback in order to make fixes 
+Can't predict how players will react, parts they feel most engaged with, strategies formed, what might be discovered 
+1. Level of difficulty
+	Skill floor/ceiling: how little skill you need/neccessary, want it low so people can start making informed decisions
+		Ceiling: depth, Ex. having higher lvl monsters that take more to beat up. 
+	Want a smooth natural rise as people get better at the game 
+	understand the metagame: game above the game, how do you do well given tools and optimal play
+		Ex. certain items having better drop rates/higher power
+			Pokemon types
+	Stealth Games: see the height of skill play involing really weird strategies, Ex. standing on npcs
+2. Game based on strategy or chance, which is healthier for the experience
+	randomness fun or dreaded, does it hinder strategies and do you want that; how you can compress the skill floor/ceiling gap 
+	is gameplay interesting for players with varying degrees of luck 
+3. Does the game have interesting meaningful decisions
+	does the player have to manually alter the game state, can they take risks and how well do the understand the risk, does the game play itself/optimal strategy that restricts actions to one path if they wanna win
+		Standing somewhere where enemies can't see you (cheezing) 
+		Typically want to remove because players will optimize the fun out the game 
+4. is the game interesting when its not the players turn 
+	when is player interaction the lowest, how long is that period of time and whats the purpose 
+	complexity added if inactive could interact with active 
+	how vigilant do players have to be when its not their turn, when can they relax
+	Ex Magic vs Hearthstone: Magic lets you react to other player's actions vs not being able to interact at all 
+		Always being aware of the game vs relaxing 
+		being online vs offline 
+5 step process: identify diff between game now and what you want
+	make small changes to the rules that will reach what you want
+	playtest with new rules
+	analyze new game 
+	
+Change only one thing between each playtest, required playtest time is proportional to size of change made
+Changing numbers and changing rules can both radically alter the experience
+Need to envision a fun experience and work with players to reach it 
+
+Chapter 2: Frameworks
+Ways of breaking down games to make them good on their own 
+MDA: 
+Mechanics: data level constructs
+	presentation, constraints and limitations, systems and rules, technology 
+Dynamics: runtime interactions between mechanics and players, the go between of the game data and the feelings the player is having
+	Ex. moment to moment happenings, semi-predictable 
+Aesthics: personal experience/feelings
+	more artistic goals, most difficult goal
+Players encounter them in reverse order to designers
+FDD: 
+Formal: boundaries that differentitate games from other media
+	technical environment you have to play in
+	hitting buttons what actually happens, resources,
+	Ex. Removing outcome makes it more simulation
+Dynamic: ONLY exist when game is being played 
+	emergent play: play that belongs specifically to player
+	emergent narrative: 
+	playtest: only way to understand dynamics, something you could only catch during playtime like a voice line being played too quickly 
+Dramatic: the fictional elements, the story, premise: core diff in our world and game
+	explicit or implicit story: have to figure it out vs being given it
+	
+MDA vs FDD
+Playtest framework vs academic: removed aesthics in FDD can analyze a game and give it to someone else and they can analyze it without experiencing the same things as you 
+Broad/descripted classification vs specific/enumerated: 
+Emphasis on players vs emphasis on content: MDA more subjective to personal experience
+
+Elemental Tetrad: Basic form
+Union of FDD and MDA: 
+Mechanics 
+Story
+Tech 
+Aesthic: things perceived by the player's senses while they are playing the game, sensory input, controller vibrating 
+then order by visibility to the player. Helps figure out subjective vs objective parts
+
+Analysis frameworks: 
+FDD doesn't talk about emotions of player, MDA 
+Many topics are shared between frameworks which leads to some shared vocabulary 
+ 
+

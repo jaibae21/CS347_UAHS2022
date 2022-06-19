@@ -1,0 +1,44 @@
+**Unity basics cont. **
+User interfaces: 2d plane overlayed, 
+	UI->canvas: always overlay over top of game, always exist a certain distance away from camera, worldspace canvas-useful repository
+		canvas already big which makes it out of the way
+		screenspace over, stay in one place
+		don't delete event system object, takes care of when you interact with said things
+		button has access to any public function
+		inputfield.value to get text 
+		anchor points: any UI, click little square, want to anchor to edge of screen, typically dont want the UI to deform
+		speed*Time.deltaTime    helps so that the speed at which something updates or move: time it took to render last graphical frame
+		time.fixedDeltaTime: same thing but for physics engine, not as useful as you can't write to it and always says 0.02
+		Position vs Velocity:
+		can do math in inspector
+		Trigger: will make something fall through scene/ground, OnTriggerEnter2D
+			two triggers can't collide
+		Collisions: 2d/3d, Collider x Collider or Collider x Trigger
+		Goes over menu making
+** Layered Tetrad ** 
+Inscribed: on game disk (text, music, animation)
+Dynamic: single player/person sitting playing game
+	emergence: what makes game design hard
+	aesthitics: procedural art and physical strain: the feedback you get from playing the game (holding the controller in a weird way to run and move camera)
+Cultural: multiple players or exists outside game
+	social media, memes, fan-art
+	gaining a weapon that then becomes the new new player weapon 
+	cheat engines, gameplay mods, game walkthroughs
+	fan mods that added quests, news stories on (ex violent games or sensitive content)
+	if you created the game you can't interact with the cultral layer 
+Things can always be traced down the layers but not always up. (ex. fortnite dances and toys)
+**Inscribed Layer**
+FDD
+Mechanics: what you wanna do, tools you have, and methods you use on tools
+objectives: 
+immediacy: guides player moment to moment actions (short), reflect fictional premise or mechanical ruleset(getting a certain lvl or amount of money) (long), order short goals (mid-term) 
+Importance: High- usually deal with survival and achieving capstones (ex. almost everything in a fighting game), Mid-goal seeking setup for success, low-combination of caution and optimization
+Conflict: managing a set of resources, risk v reward, vs other players, unequal objectives = asymmetrical gameplay, 
+Inscribed player relationships: 
+	Interaction: way game is played (single, player v environment, battle royale)
+	Actor Roles: other players, npcs. Protagonist, competitor, collaborator, citizen
+Inscribed spaces: navigable environments, their purpose, flow-way in which you travel;can change moment to moment play;unlocks you new things, landmarks-specifically designed to stick out in player's head;gives you approximate bearings especially if you haven't unlocked that part of the map, experiences-finding a new ability;finding a boss battle;what happens because you are in the space, induced objectives-changing objectives based on new environment you encounter
+Inscribed Tables: how we describe any data structure, encounter table, progression tables, crosses the most with technology
+Inscribed Mechanics Misc: rules- how fast you move;to beat game need to beat boss, boundaries-no using monoply money to pay for real things;ARG (alternate reality) random phone numbers in game that you could call with your phone, resources-
+Inscribed Aesthetics: the screen, sound data, don't typically encounter taste or smell, goals-want particalur mood through low light, claustrophic hallways, slow movement
+	
