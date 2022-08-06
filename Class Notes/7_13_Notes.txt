@@ -1,0 +1,154 @@
+** From final review ** 
+Iterative Design(7): 
+	Identify essential questions and skills
+	given scenerio or phase find important item and way to do it
+		sci fi fps, which question should we use for the preproduction phase
+			what prior art exists, then go look
+	Implementation: discern between refinement and efficiency 
+		efficieny is over long period of time how long can you spend comformtably working on something
+		refinement quality of product that comes out from the work and hours you put in
+	Innovation: what is incremental and intersectional 
+		handheld to console - graphical level incremental: already knew graphics and improve
+		multiple monsters on map but only go for target but sequel could ride non target to get target on - intersectional: solves how to have players engage in the other monsters on the field
+	Brainstorming: 
+		generate ideas, collect them, collide them to create intersectional innovations that address multiple ideas at once
+		find best innovations then combine into game
+	Production Process: core idea - changing your mind
+		need mind to change at beginning of process 
+		prepoduction - figure out what game will be and who sell to 
+			vertical slice ends process: highly polished, what you show to backers or players as a playable demo
+		production: bringing most labors onto the project
+		alpha build: still has some bugs but doesn't need content created for it 
+		beta: suitable for mass release but still bugs you should remove to improve quality and still some niche things you might want to improve
+		gold: not really in today, wanted a game for a console, you'd have to send game to console maker and get approval for it to be made
+			post-release: adding patches and fixing bugs, DLCs
+	Scoping: making sure scope of what you can accomplish with resources match with scope of game you are creating
+		mismatch = under deliver or over promise on content
+Design Goals: 
+	what game do for people who play it 
+	small group of highly invested fans or large group of semi invested
+	greater good: divulge info to player, incentivize people to do good things like excercise
+	flow band:
+		understand what game is doing and how you're tackling it
+		clear and immediate feedback, expression of skill causes challenge to be overcome
+	Structed Conflict
+		brains problem solving machines, we optimize ourselves within rules
+		structured lets us skip to optimize and we get gratification as we feel we are improve,
+	Autotelic enpowerment
+		decide what you want to do, when, what world looks like
+		correlated with people enjoying flow
+	Performative
+		giving player ability to make beautiful play
+		large degree of design space to player improvisation
+		be able to tell difference in autotelic and performative
+	Attention and involvement
+		attention: reflexive act of paying attention to something that grabs your interest
+		involvement: voluntary engagement to something that gives you return on something
+			feeling of improvement on something, understand more of a game
+		follow an interest curve the same as 3 act structure
+		4 elements of tetrad can be mapped onto what gives executive and reflexive gratification
+		technology typically replaced with community
+	Interesting decisions
+		make them quickly or important ones
+		given a decision tell why it isn't interesting
+		discernable: be able to tell that it did something
+		integrated: game needs to show that the input has been recognized
+		ambiguous: know that the decision impacted the game and be excited about the possibilitys and not know what is gonna happen
+		double edged: more than one correct option, have difficulty weighing them
+		novel: decision needs to be different from those that came before
+			very engagin combat system but combat for 40hrs straight will get boring
+		clear: broadly predictable consequences
+	Experiential Understanding
+		back half of personal expression and communication
+		some want to communicate things through art others want to experience things through art
+		this is the gratification of those people through player centric goals
+
+
+
+** Design Goals **
+Designer centric:
+Fame and fortune is harder to come by in this industry 
+Gaming community is large and you can form a social base if you can communitcate what's needed 
+	Life goals developers have
+		making money
+		Fame
+			social equivalent of making money
+			want name out there and recognized for a certain quality or feature of a game
+			harder to achieve in videogame industry bc its much more collaborative 
+				also the limited technology to make one on your own
+	Community 
+		create art around which a group of interested people will congregate
+			can draw in everyone or a specific closed group of people
+		community is promoted by breadth of access or difficulty of access
+		secrets, lore, and strong artistic direction enable ease of community growth 
+	Personal Expression and Communication
+		particular emotion we want other people to understand
+			give idea that you would do actions of monstrotity given the circumstance
+		forms of media for this concept and form of media adept at using is when this arises for videogames 
+	Greater good
+		use games to increase quality of life
+			workout, typing
+		raise awareness or broaden perspectives 
+		behavirol change
+			better at to-do lists
+	Better Designer
+		
+Player Centric
+Engagement in form of fun magic circle, lusory attitude 
+	game gives experience of something that is enjoyable (below is whats needed to be enjoyable)
+		joy of competition (agon)
+			player vs player or player vs environment
+		interacting with random evnets (alea)
+			different pokemon encounters
+		excitement of vertigo (illinx) 
+			rollercoaster, skydiving, spinning real fast in a room 
+			flight or fight 
+		predict something will happen and it happens (mimicry)
+			civilaztion game
+	Engaging 
+		mental investment = androgous power
+		fun or funny to engage in 
+			nice animation, things you didn't expect
+	Fulfillment 
+		Stimulation
+		Socialization
+		Community 
+		Precarious form because it can be gated off leading to unethical design choices
+			paying more money, holding emotional engagement hostage
+	Lusory Attitude 
+		law abiding attitude towards pursuing game 
+		helps buy into the fiction of the game world
+	Magic Circle
+		maintain lusory attitude for long enough
+		state of max immersion 
+			only thinking in terms of game
+				ex poker, all about bluffing, betting 
+		pauses in immersion cause the magic circle to deteriorate
+			doesn't immediately outright break
+	Flow 
+		discrete psychological state
+		feeling totally focused (in the zone) 
+		typical for rhythm, back and forth movement games
+			causes constant input of skill
+		when so many hours pass, tunnel vision
+		metally fatiguing
+			typically can only be in flow for 20 mins 
+		player skill needs to be almost matched by the game's challenges 
+		achieved a lot in action games, 
+		need to experiecne it as and ebb and flow type thing so you don't get bored and put down the game
+		find the skill ceiling, then estimate where to bring it down and back up to get flow
+		Pursue flow in a clean way
+			optional extreme difficulty
+			
+Psychological gratification
+Focus for interesting curves, decisions 
+Small set of goals limits and focuses design 
+Many goals broaden and stabilize the design 
+	more money need to make, more designs you pursue
+	
+	
+	
+
+	
+	
+	

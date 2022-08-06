@@ -1,0 +1,214 @@
+
+** Math Game Balance(11) **
+single player game want appropriate level of difficulty over entire game
+multiplayer: fairness where every player has equal opportunity to win (1v1, team, battle royale)
+	easier in symmetric games
+	harder to accomplish in asymmetric games
+	actions taken if teams are deliberately uneven
+		bowser in mario party
+any game: viability no options being rendered useless by options that are stronger in any meaningful scenario
+	action: metagame, using most effective tactics available, flocking towards more powerful things
+		the meta champs for each patch of League
+
+Use Math in game Design
+	random elements
+		to stop the randomness of skill
+		distribution: use same distribution for drops
+		choice of effect: what comes of that random element/distribution
+	increase/decrease effectiveness with respect to in game variables
+	implement pos/neg feedback in terms of correlation
+		positive: after so many rounds of doing well you are able to do even better. Snowball effect
+		negative: blue shell in mario kart
+			used when weak players need boosted up and strong down so everyone can be in the middle
+Reconcile Game Design Goals against Math abilities
+	difficulty
+		negative feedback: farm in one area gives less xp forcing you to go to mobs more your level
+		incentivation of healthly play: cooldowns to get you to use both magic or physical attacks, numerical advantages
+	fairness
+		feedback to get people on the same lvl
+		mitigation of skill gap through random elements: everyone of every skill can play 
+			mario party, jackbox games
+	Viability
+		boost and lower effectiveness depending on in game situations
+			mathmetically: crit hits
+			andongously: charge mechanics
+Other uses for Math
+	variety
+		differing outcomes among repeated actions in single playthrough
+		brought about by small scale randomization
+			minion waves in league randomly choose attack targets
+		brought about by emergence within a large possibility space
+	replayability 
+		differing gampeplay experiences among multiple playthroughs
+		brought about by large scale randomization
+			role playing games
+	Excitement
+		non-deterministic outcomes of things are exciting
+		action games: bosses don't do the same atttack over and over again, they choose from a pool
+Choosing Distributions
+	uniform
+		all outcomes are equally likely
+		highest variance among our distributions
+		quick and easy to implement
+		intuitively understandable
+		use for: random target selection, random drawing from a pool, high variance random generation
+	normal
+		bell curve
+		outcomes near mean more likely
+		represents interaction of many random variable
+		use for: stabilizing a random element (adding multiple rolls of dice throws), modeling population, low variance random generation
+	exponential
+		outcomes near 0 are more likely, only positive ways to increases
+		represents repeated necessary successes of a random element
+		use for: high impact outliers (loot type games so rare and unique items stay that way), harsh falloff (shooting rocket in game, hit near a guy, a guy, not) , gradients of rarity (item has different components want best of componenets)
+	Combining Distributions
+		predicating an outcome on two random events MASSIVELY decreases its composite likelihood. 
+		to forgive repeated rolls on the same table, us an "at least once" setup
+		Or increases likihoods
+		And decreases
+	
+	Assigning Outcomes
+		small
+			projectile spread pattern
+			random stat allocation
+			fodder enemy spawn count
+		large
+			boss move selection
+			raid chest drops
+			critical hits
+		more requenctly accessed distributions are more free to have deltas of randomness
+		if something is an important outcome but not accessed a lot then you need a bigger spread
+Psychology of Randomness
+	Loss aversion
+		losing due to random hurts more than gaining same thing
+			when you have something you're invested in it
+			frame it so you have it but can take it away so players care about it
+		any distribution that can roll below perceived "average" result might incur more negative feelings than positive ones
+		loss can be disguised by hiding actual loss behind opportunity costs
+		going below the average hurts more than going above
+			screw it so it looks below the average 
+		reframe losses as neutrals and bonuses as super bonuses can mitigate the pain from loss
+		Ex. WoW: playing for a certain amount of time a day is optimal so after 3hrs you started gaining xp later, reframed so that first 3hrs is rested double xp then returns to normal
+	Delta of Randomness
+		how far above and below safe option does this random event lie
+			androgous difference in worst and best outcome
+		how far should this gap be able to grow and what are the extrememe behaviors
+		are fixed behaviors of the random element adjected to compensate
+			roll a die or deal 3 damage, want to incentive random so make it so the damage dealt is less than average of the random event
+		combined with loss aversion this means that random bonuses (criticals) are safer design choices than random losses (miss chance)
+	Expected Value vs Variance
+		expected: avg value over all possibilites
+			anchors player expectations
+			represents the value in majority of cases
+		value is multiply chance cs the magnitude of effect
+		variance is amount by which value tends to vary from instance to instance
+			represents frequency of behavior
+			less variance = more predicatability
+			remember loss aversion
+Positive and negative feedback
+	random rolls hidden from player means we can adjust them to steer game state towards optimality
+	positive feedback correlated with performance rewards
+		tension
+			chess, pieces being slowly removed
+		skill expression
+		forward momentum
+	negative feedback negatively correlates performance with rewards
+		competition
+			kill streak bounty in league 
+			stops people from feeling behind and that they can't catch up
+		skill gap compression
+			diff in worst in best player is less/smaller
+			gameplay is 50% luck and 50% skill
+			improves overall experience
+		gravity towards normality
+			mario kart being around everyone and bumping into each other is the optimal play
+				items you randomly get determined by place
+				worse you do the better rewards you get
+Randomness in Paper Prototyping
+	Dice
+	spinners
+	deck of cards
+	consider audience and environment
+		children: might want spinner
+		adults: may be able to roll multiple dice and do separate lookups
+	consider if results should be exposed to player or not
+Other Uses for Math
+	multiplicative stacking
+		3 effects that double damage
+	addictive stacking
+		somethings boosts by 20% and something 10% instead of multiply benefits you add
+		combines small bonuses without big explosion 
+	categorical stacking
+		strongest buff or debuff applies at a time
+			was good for build variety 
+			but heavily simplified gameplay for those that like to build on buffs and debuffs
+	falloff rates
+	combinatorial enumeration
+		more random distributions will massively decrease the probabilty of something
+
+
+** Lighting and Sound **
+	Lighting
+		Elements
+			combination of textures and lighting engine
+			specular
+				light source directly hitting an element where light rays are parallel
+					projector
+			diffuse
+				being lit by light rays that are scattered in all directions, impact surface from non-parallel point of view
+			ambient
+				calculated on the most important diffuse lighting and spread throughout the environment
+			all 3 combined together (phong) you get a shader
+			ambient seclusion (inclusion, can't hear what he says)
+				correctional value on ambient light to get shadows and such since we cheat on ambient light
+		Textures
+			albedo
+				what color exists at every point along the texture
+					how the computer understands to assign color
+				UV mapping
+				flat picture of what the entire object would look like if you unwraped it and squished it
+			metallic value, smoothness value
+				how much weight is given to the specular vs diffuse light
+				most metallic thing is mirror
+				matte highly scatters light rays, would never be able to see your reflection
+			normal map
+				normal is the vector that shoots out of the face of a surface
+				give impression of something at a fine grain look by toying with the normal 
+					another UV texture that you overlay on an object that has value of 0 - 1 that says how offset the normal is
+			height map
+				create very very small shadows on an object
+				UV texture
+			both normal and height maps can cause low polygon items to look like high ones
+		Glow and Bloom
+			bloom is where it looks like the light is spreading out of what its contained in
+				is not created in games and doesn't exist in real world bc its just a result of how our eyes are made
+				in unity: add post processing volume to camera so bloom is on the camera itself
+				motion blur to simulate camera at lower frame rate
+				vinyette effect: darking corners of screen or square
+			glowing achieved through emission which lights up the things around them
+				cast all elements around a light with that same glow
+			high dynamic range: red, green, blue, intensity
+				expand range of colors, so now colors with with intensity, more intensity means it will glow more
+		Baked & runtime Lighting 
+			baked lighting: light map
+				another albedo light that you overlay ontop of in game scene
+				static allows unity to pre bake objects
+			swinging chandelier or lamps need to be done at runtime
+		Particle Effects
+			lighweight object on GPU that glows in particle color
+			allows you to spawn particles that evolove to show something
+			fire particle that grow and expand to look like something on fire
+			don't recieve light from environment
+			short lifespan
+			used for: smoke, fire, mist from waterfall, muzzle flash on gun
+		2D & 3D sound
+			British broadcasting company has big library you can use
+			left or right of me or left right and all the other objects
+			2D:
+				loud sounds with no obstructing objects
+				percent of sound given to left and right channel
+			3D:
+				if something goes through an object it has this much sound percent left
+				muffling of a sound wave moving through an object
+				higher pitch loses more
+

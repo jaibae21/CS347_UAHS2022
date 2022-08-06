@@ -1,0 +1,138 @@
+**AI**
+
+*What is/is not AI
+	Set of preprogrammed instructions that run at runtime
+	is not preprogrammed set of tasks that terminate at death death state
+	Not completley random/deterministic behavior that is easily discernible
+		subjective player side, give impression of combat, trade etc
+			combat: expect opponent to try and survive and fight back
+	Might be a complicated set of reactions to pre-planned stimulus 
+		if the player can understand everything its gonna do might not be AI
+*Goals when Designing
+	High
+		should never feel that its predictable
+		comprehensively respond to environmental stimulus
+			AI has appropriate response
+		Provide engagement, learning, and challenge 
+			minions in LoL: provides engagement for player
+	Low
+		convey character: such as being super agressive or passive
+		model hgih complexity ancillary behaviors like cooperation
+			minions in LoL attacking you
+		optimize AI use of development and runtime resources
+*Tools AI use to make Decisions
+Summary
+computers good at numerical problems
+trick AI to think like human by translating human thought into numerical
+need to be efficient 
+	Decision Trees
+		Graphic representation, typically only deal with handling one boolean evaluation per step
+		similar to flow charts
+		coded or decided using machine language
+	Fuzzy logic
+		approximates the mental rules that humans use to make decisons
+		and is min, or is max, and not is 1 - x in fuzzy
+	Probablistic
+		provide probablilty distribution
+		roll random value and take action depending on what it is
+		sum of probabilites need to equal 1
+		can adjust at runtime: such as adjust a spell's action
+	Pathfinding and Nav-Meshes
+		finding paths across graphs
+		map world using nav-mesh that reframes physical traversal to graph
+	Prediction
+		Need record of past events and way to make probabilites for future behavior 
+		General or personal model
+		N-bit predicotr: number bits tell how easy it's going to change it's mind
+			too many bits would make it too hard to change it's mind
+		Fitted predictor model: predicts what's going to happen at n+1 step
+	Gaming Tools
+		cheat information
+			feed AI info beyond perception of associated actor
+				such as telling it what weapon a player has so you may avoid a small room if they have rocket launcher
+			used to increase difficulty beyond what an AI is normally capable of
+			players hate to know this is happening
+		difficulty settings
+			using AI to give difficulty by limiting or disabling capabilities to change its effectiveness
+			Modular: more difficult, AI built on sequence of inferences, snip connections so less complicated rules and information to make predictions
+				easier to trick and predict
+			Manual: separate AIs that are used for each setting, academically easier than creating multifaceted AI
+			Different levels should "feel" like same opponent at different skill lvls
+		Adaptaion to different players
+			gives impression of biases and "learning"
+*AI Group Coordination
+Pick a group control scheme that best matches the group
+more abstract command structure, more weird decisions
+fiction can inform your group behavior strategy and choice of authority figure
+	Leader-Based
+		single member makes decisions and issues orders
+		introduces single point of failure at cost of faster and more coherent decision-making
+		can facilitate worldbuilding
+		massive horde games
+	Hive-Mind
+		no clear heirarcheal
+		meta-actor that uses all of the subunits
+			such as a separate game object
+		consilodate decisions into a single point
+		can make unnatural decisions, such as sending 9 units towards enemy and 1 to run away, like naruto shadow clone
+	Leaderless
+		group behavior through emergence 
+		no forced collaboration between actors
+		easier to program
+		"dumber" units
+		everyone is doing their own thing, not communicating with each other
+		conducive to machine-learning approaches
+	Ex Boids
+		Separation, Alignment, Cohesion
+			too close to another actor back away
+			heading towards a common point
+			want to be at center of group, not spread out 
+		Can be used in isolation or layered into other group behaviors
+*Implement AI
+coding skills, manpower, target complexity determine which AI implementation
+more high end makes it harder to understand and tweak
+	Decision Tree
+		set of manually coded reactions to external stimulus
+		easy to code
+		nearly impossible to find any emergence
+			won't do anything you didn't tell it to
+	Sense Think Act Cycle
+		constantly cycling triple of functions
+		Take in all the available raw information
+		transform information into heuristics
+			threat, advantage, disadvantage
+		Use heuristics to decide on single course of action
+	Finie State Machines
+		states, transition rules, associated behaviors
+		every frame is checked, transitions checked against activation conditions
+			animator in unity
+		medium emergence
+	Machine Learning/Neural Networks
+		makes inferences upon inferences and uses complicated algebra, so harder to understand
+		Gradient Descent
+			feed nerual network set of actions considered good
+			take information and randomly creates inference rules
+			output doesn't match what you say, it does algebra on the hidden layers to make it more likely
+		Reinforcement Learning
+			runs around in world space and makes own inferences
+			is given goals and when reached rewards AI
+		low coding and need lots of experience
+			overfitting to many tasks will cause it to brute force and memorize as much as possible
+		pure emergence
+			do things that make no sense
+*Special Concerns
+trying to create tool that solves problems without oversight and run in a specific amount of time with limited hardware
+the farther the AI reaches into the code the worse its going to scale and more software principles it violates
+	Manpower/Hardware
+		predictablility of actors
+		will they live long enough to make it through a complex decision tree
+		cpu/ram to run AI and how long will it take to create sufficiently skilled AI
+	Scalability
+		reuse solutions among actors to save money and time
+		does addimg more AI affect hardware costs
+	Diminishing returns on complexity
+		machine learning typically used for intelligence applications
+		videogame AI efforts mostly ignored so new bits added will result in less value 
+	API Exposer
+	does providing cheat information to AI cause breach of data encapsulation
+	can external programs hooking intot our AI to gain information that they shouldn't have

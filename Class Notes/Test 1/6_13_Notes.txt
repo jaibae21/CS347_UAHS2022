@@ -1,0 +1,116 @@
+Quiz 2: 
+update bc input updates on graphical frames
+rigid bodies physics
+sprite-render
+collider-collision engine
+the starting level has a specific music track, and so players will discuss how the track reminds them of that level
+
+**Tetrad con**
+Inscribed Aesthetics: 
+	the screen, sound data, don't typically encounter taste or smell, goals-want particalur mood through low light, claustrophic hallways, slow movement
+	Visuals: everything a person sees when they load up the game 
+		box art, loading screens, can be used as anti piracy method, i.e you wont see something and can't continue 
+		can have multiple mediums
+		rastoration: view port of 3d model made into pixels
+	Sound: sound effects draw you into the world more (horse walking sound), instanteously deliever information such as if you've hit something or can interact 
+		dialogue: concrete, fast, can help you really get a point across, highest information density 
+		Music
+	Touch, Smell, and Taste: more common in table top games and such, however rumble controllers better for approximate information gives idea to if you're doing something correctly
+		Touch doesn't get annoying if used to give same signal over and over again
+	Aesthic Goals: 
+		Mood: faster but more delicate than mechanics, no objective logical theory 
+		Information: boss tracks, fictional states such as motifs popping up for a certain scenerio 
+Inscribed Narrative: 
+Follows same way you would break it down in an English class
+	Components:
+		premise: what sets the fictional world apart from outs, using dialog (ex star wars openings)
+		setting: fictional space the game takes place, informs what the character is capable of and technology around them
+		characters: people who have agency within a story
+		plot: how the characters react to themselves and setting
+	Dramatics: 
+		Traditional Structure: Five act, important climax happens right in the middle, follows a typical story (ex romeo & juliet) 
+			big important event happens right in the middle that puts everyone on a path
+		Three Act: built around one single climax, built around single protagonist so when they do something exciting you also feel excited, gives you a kinda expectation since setup is "boring", inciting incident is where the characters everyday life is disrupted, 1st plot point something you can't return from; can apply to dialogue, actions etc
+			typically the 3 acts happen in a different location 
+			Act 2: "road of trials"
+			Act 3: hit their lowest point, then revelation = climax, 
+				denoumont is super fast, kinda like welp you did you the end
+			Can apply to every instance of time
+		Ja-Ha-Kyu: very quick, think cowboy stand off, (ex.quick reload), useful for animation 
+	Interactive vs Linear: main plot vs side quests
+		beads on a string: preserve illusion of control, choices that feel different. 
+		Two options that split and then reconvene, reference something that happens later helps give the illusion 
+	Character vs Avatar: Character already exists in the game world vs avatar is created, you are nameless
+	Narrative Goals: emotional evokeness, motivation and justification like a scale exchanging freedom of backstory for justification, reinforce the mechanics (abstract)
+Inscribed Technology:
+	Dynamic behavior, strong interplay with mechanics
+
+**Dynamic Layer**
+	Player Role: dynamic layer doesn't exist without
+		player feels things at different times which influences time of game and they also have unique expereinces with the game
+		different reasons for sitting down and starting a game (emotional motivation) which introduces chaos
+		introduce atypical mentalities, throwing games, or doing things outside of expected gameplay
+	Emergence: can be previewed with playtest
+		can't look at all the rules of the game and see how everything is going to interact
+		playtest also helps tell you how much data one can store in their brain
+		developer responsible for emergent behavior
+	Mechanics:
+		Procedures: 
+			buttons you press, decisions that match with what goal we're trying to achieve
+		Meaningful Play: 
+			assigment of subjective weight to player actions and strategic weight to their goals
+			needs discernable effect on aesthtics
+			integrated andrognously meaningful, needs influence on outcome of game
+			meaningful actions needed for engagement
+		Strategy: 
+			cuts down on number of decisions needed to make to reach goal
+			optimal strategy exists for any pursuit of a goal
+			benefit over standard play, no goal is standard play
+			brain power for said strategy?, more mentally taxing than standard play
+			too much design for strategic play creates a barrier to entry to playing the game like with fighter games with mulitple combos and cause conflicting goals, can be mentally taxing
+			Need balance- depth (how much mechanical complexity to the dynamic strategy there is) with fighter games is like adding new characters to the roster with different skills, complexity is how many inscribed mechanics someone has to keep track of. Both are brute force methods that can keep a user interestered 
+			First Order Optimal: 
+				low mental effort with good reward
+				causes reliance and monotony and can later cause difficulty spikes because you didn't learn anything at the easier point which can cause people to quit game
+				they are not bad, easy way to get feet wet for like an mmo but want to make sure to ween people off of it. 
+		House Rules: 
+			culturally or dynamically imposed rules, implied or explicit
+			can be done between people or on yourself such as choosing to not use a specific weapon or ability 
+			one hitting and running and letting time run out (winning by technacality) 
+			hiuse rules becoming inscribed (Aram becoming a thing)
+		Player Intent: 
+			what a player wants to do in a game
+			socializers, explorers, killers, achievers are the general archtypes along with cheaters and spoilsports (bad actors)
+			can't control intentions but can control type you attract
+			spoilsport act within rules of game but don't follow mechanics in order to frustrate others
+			bad actors come from the game, some reasons being if they feel skill needed to acheive a goal is unbalanced. Spoilsport enabled by dynanmic behavior so they are developer responsible
+			many cheaters are from killer archtype so gets bad rep
+		Outcomes: 
+			results of actions and resolutions of mechanics. Quests, immediate, final goal, cumulative
+			lot of games today have no end goal so people will keep playing
+	Aesthic: only seen when game is on (diablo minimap)
+		Composite: things created as result of independent systems, enabled by inscribed technology and aesthtics
+		Procedural: specific end states you want composite state to end up in 
+			more purposeful, 
+			music - used as signaling 
+			visuals - movement controlled with inverse kinematics: say where you want a foot to be and it auto calculates angle and what not, lights and shadows (there is an inscribed verison)
+				Tesselation: getting farther from something reduces the detail you can see (level of detail)
+		Environmental: not game but environment around player (having the lighting slider to help you see based on your own lighting or lack of),
+			what ambient noise is around you as you play
+			changing game for disabilities (color lookup table)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

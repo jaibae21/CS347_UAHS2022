@@ -1,0 +1,86 @@
+** Working with Animation** 
+
+animation trigger 
+
+*Unity*
+Key frame and Events
+Uncompress an image: filter mode->point
+can change how fast an animation is, can  create a speedMultiplier in the animator, useful in skeletal animation to prevent sliding on the ground
+mirror should change direction of time such as pulling something out and then putting it back in
+	Sprite Animation:
+		Series of images played together, uses sprite sheets
+		contains no interpolation
+		in the animations folder -> thing that looks like 3 boxes with lines opens animator and allows you to set animations with actions
+		put animation on top of something rather animation controlling behaviors 
+		Make character walk up or down: 
+			set layer as default state (such as idle animation)
+			need script (see bottom) 
+				in parameters in animator, click plus and add (ex. yVelocity) whatever variable you put in script
+			right click on default, make transition and point where you want
+				unclick on has exit time
+				transition duration 0 since we're working with sprites (helps transition smoothly with skeletal)
+				set condition to be what you need, this case walk up is when yVelocity is greater than zero
+				make bunch of transitions that dictate what's going
+					don't put just 0 if working with floats, just put something like 0.1
+					
+*Blender* (can use portable verison install) 
+tab: edit mode or change to object mode
+scroll: in and out
+1-7 change views
+Spcae: search through commands
+A: select all
+T: move up 
+Alt R: reset skeleton
+Middle mouse button: locks in axis you're scaling on
+will swap .L and .R put on name of things when using symmetry 
+ALT H: unhide everything in animation
+	Skeletal Animations:
+		don't define every pose, use unity to interpolation
+		create faces on mesh: extrude, scale, extrude, scale over and over again
+		Face select: extrude (e), scale it up and down (s), grab it (g), rotate (r)
+		can use symmetry action
+		subdivide: cuts face in two (ex. to make legs)
+		give skeletal animation (armature)
+			gonna extrude the armature
+			start with root bone, looks like tail going into the body
+			grow it throughout the body 
+		mesh follow model: object mode, click on mesh, shift click armature, crt p, armature deform with automatic weights
+		weight painting: controls how much other things around the skeleton move, shows how strongly that bone affects the mesh
+		Animation:
+			Diamond->Dope Sheet->Action Editor
+				position how you want
+			Record button or buttons A, I, Location Rotation & Scale
+				deslect to see everything in the animation tab
+			Interpolation mode: bessier 
+		Forward Animation and Inverse Kinematics:
+			For every limb you add inverse kinematics
+				Inverse Kinematics need not be parented to anything other than the root bone in order to keep track of it
+				Need pole
+				Pose mode
+				grab bone and the bone with the chain link. Add bone constraint and i or look for it 
+					Point to target and pole target
+						pole faces direction its going to bend
+				change chain length
+					chain length is how many bones the inverse kinematics is allowed to use (2 bc it can use itself and the shoulder)
+		Hit shield button to save
+		File->export as->fbx
+	Unity with Skeletal:
+		Place in unity
+		click and drag right into scene 
+		Loop time and pose
+		Add animator controller 
+			can grab bones in unity 
+			Drag animations imported in from fbx and drag into animator controller 
+
+//animation script example
+public Animator animator;
+private float yVelocity;
+//update
+if(Input.GeyKey(KeyCode.UpArrow)
+	this.yVelocity = 1f;
+else if(Input.GetKey(KeyCode.DownArrow)
+	this.yVelocity = -1f;
+else
+	this.yVelocity = 0f;
+
+animator.SetFloat("yVelocity", this.yVelocity);

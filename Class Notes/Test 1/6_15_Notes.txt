@@ -1,0 +1,113 @@
+**Dyanmic layer Cont**
+
+	Narrative: how we interact with the story
+		State Influence:
+			players abiltiy to change how the story is going, usually through destruction like death
+			causes combinatorial explosions such as two of the same npcs
+			done through choosing between two actions
+			can be tied to mechanical abitlites but reduces nuance of the character
+				have dimensions to the character so in order to be in best mechanical state have to go to one or the other extreme
+		Multiple Endings:
+			usually through decisions
+			promienet in games with character progression or conversation
+				branches in conversation
+			used as a mechanical tool
+		Shared Experience:
+			dynamic and cultural layer
+			social bonding that happens when you and another set out to complete a task
+			social ordeal of how two people problem solve
+				bomb game, fps, mmo raids
+			also done in competitor games
+	Technology:
+		runtime behavior and performance of game
+		code responsibily, Murphy's Law
+
+
+**Cultural Layer**
+Exists beyond play
+	Mechanics:
+		Mods:
+			new assests, earliest form of independent scene
+			other games can come from these
+			ROM Hacks change the way the assests show up
+			Plugins are usually helpful, open the game from software secruity view, 
+			Official Support for mods which helps create nonintefering things, makes plugins safe and authorized channel
+		Custom Levels:
+			similar to game mods but in cultural view different
+			maker type games and now are provided within games
+				Super Mario maker
+		Diff in dyanmic and cultural
+			Speed running idea is cultural but developers can take the idea and put it in the game making it inscribed
+	Aesthetics
+		Fan Art:
+			visual media that draws from narrative and aesthetics, and even the dyanmic layer
+			people make new cultural layer around itself
+				pairing up characters that usually don't
+		Cosplay:
+			large investment of time and money usually seen at face meetup 
+			typically inscribed art or significant cultural elements
+				other elements such as gui
+		Gameplay as Art:
+			looks at inscribed mechanics
+			skilled player going through mechanics in an impressive or pleasing way
+			voluntary or involuntary, don't have to be trying sometimes just happens
+	Narrative
+		can't be distributed on its own unless its something like fanfiction
+		narrative game mods like adding more quests
+		experienced over time
+		instantaneous and direct sharing
+		machinima making game look cinematic as possible but characters just slightly moving their head
+			offically supported modes now for taking pictures and such
+	Technology
+		cost of game, how its distributed
+		what montiors the progress
+		use of game engines for simulation and game AI
+		use of player behavior for sociological study
+		microtransaction perception going from smaller purchases to bigger ones
+			passes
+		Computer generated environments,
+			subservice scattering how light reacts to surfaces (Ex. finger over light)
+			ray tracing (cuts down on lighting operations needed, render what you need)
+		gaming hardware
+		Can change the inscribed layer (mods)
+		can change dynamic
+			tutorials and guides
+			screen adjustments such as blue light filter
+			mapping tools that can give the map ahead of time
+			dps calculators
+			api based tools, exposed server that developers have created
+				affecting server which affects the game
+			wallhacks and aimbots
+	authorized transmedia is not part of the cultural layer, a fan has to make it
+		want it to come from the players that interact with it
+		if it comes from an ip holder then it becomes another inscribed layer
+			star wars media, star wars games both have their own inscribed layer, (reinscription)
+	Impact of Videogame
+		influences players and everybody else
+		considering player by optimizing
+			driving prompt in pokemon go
+		develop positive skills
+			situation awareness, multitask, co-op, physical (wii with wii sports or just dance for elderly) and mental therapy, reaction speed and problem solving, muscle coordination
+		negative habits
+			specifics
+				addiction and loss of productivity 
+					exaberate when the fear of missing mechanics happens on the opposite end is having daily quests and such so that you log in at least once to play
+				toxic social behavior
+					anomity and ability to be mean then you will probably be toxic
+				predatory chance mechanics 
+					same gratification casinos run on
+					loot box games, gacha
+					selling acounts with rare or hard to get things 
+			broadly
+				elitism, exacerbation of existing conditions, propaganda (tying real life political movements into the mechanics), desensitization to violence (controversy, exposed more to makes us more ok with it)
+		Messages in Mechanics
+			way coins are setup in mario64, implies following coins is good
+			attach mechanical rewards to actions or social behaviors
+				honors in league
+				trying to get a player to quit so your team wins
+			forced to experience frames of reference
+				being told to do something seemed more good, you would go beyond your consciouness than choosing to do something on your own (consciouness stops you at some point)
+				easy way out with authority or choose your consciouness
+			frequency implies normality
+				creating implications in your game, such as darker skinned characters always being your enemy and lighter skinned always your friend
+				happens when not enough playtest is done by people who can't relate back what the game might be trying imply 

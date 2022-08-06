@@ -1,0 +1,48 @@
+*Test
+15 multiple choice
+5 short answer
+3 long answer 
+3 bonus
+
+**Ch.1
+Talked about what exactly a game was
+	be able to match situations with game definition, players not having good time bc its frustrating and relates to much to real life matches with 4
+	1: overcome unecessary obstacles, pong, Dungeons and Dragons, asteriods, fallen out cause of things like minecraft
+	2: interesting decision, oppurnity cost, predictable not guaranteed outcomes
+		capacity for prediction determines if its a game
+	3: structured conflict and resolves uncertaint in an unequal outcome, not getting bored bc of predictablility
+	4: playful attitude, didn't want something to be a game then not being game in the middle of the game, LoL
+	5: agents compete by making ambiguous endogenously meaningful decisions, clarify scope, ex pokemon healing
+	Common: want structure, excitement, novelity, mental stimulation, escapism 
+Iterative design
+	combat emergence
+	gradual skill growth, low skill floor high ceiling
+	randomness needs to be fun
+	allow unknown to exist because its fun to interact with
+	player rest (cut scene, 
+	change only one thing at a time
+**Ch.2
+Game Frameworks
+	MDA
+		playtest focused emphasis on humans
+		players experience mechanics which create dynamics and then aesthetics, developers do it backwards
+		things on game disc, exist when player isn't playing
+		dynamics is what happens or appear when the players are playing
+			metagame is the dynamics, affects how different players approach the game, ex being a healer like Sona expected to run around and heal all players
+		aesthetics are emotional response, short(jump scares) and long term(working up to max hits)
+	FDD
+		information driven, academically analyze game
+		formal how we break apart the game, crosses over with game theory
+		dynamic everything that happens at runtime 
+			strategy, metagame
+		dramatic everything that happens in the story, crosses with literature 
+	Elemental Tetrad
+		not typically used since less depth when we have layered tetrad
+**Ch.3
+	basically preview of ch 4, 5, 6
+	lose control as you go through layers
+	dyanmic and cultural is where non players experience the game
+	social games like jackbox need locked in inscribed layers 
+**Ch.4
+	everything is purposely placed in here that is in there
+	mechanics = code, objectives,

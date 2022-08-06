@@ -1,0 +1,388 @@
+** From final review ** 
+Not much on paper prototyping besides what its good and bad for
+
+GameTesting:
+	understand why we need playtesters
+	what area might you fall short in or do better in as a playtester given your background in games
+	
+	
+
+
+
+
+
+** Quiz Results **
+Brainstorming process creates intersectional innovations
+	book is centered around idea that we take alot of ideas, shovel them around, and cause ideas that don't normally coexist to collide
+	incremental is more taking in factors like RAM, hardware
+performative empowerment
+	need to establish type what performance or intended play is designed for game and how the mechanics empower that
+
+**Paper Prototyping (9)**
+form of early prototyping, by creating a facsimile of the game
+	instead of executable, we act as the game engine using props
+Allows us to easily change mechanics (iterate)
+	easily see new emergence
+Good for turn based elements and wild ideas
+Bad for high memory systems and real time feedback
+
+
+	Baseline advantages:
+		development and iteration speed
+			quick to add or remove elements
+		low technical knowledge
+			allows for collaboration from all areas
+	Composite advantages:
+		allows everyone on team to prototype what the game is going to look like
+		have set of tests that focuses on the mechanics 
+			more fruitful things to iterate on and improve on than tiny details
+			you know details aren't set in stone so you don't nick pick them
+	Items needed
+		Large piece of paper
+			large enough for play space
+				strategy, big whiteboard
+				need distances to be measured for attacks and such, want graph or hex paper
+		Dice
+			sub for random number generation
+			cards also substition
+		Cards
+		Card sleeves
+			protects cards and keeps uniformity
+			easy to mark
+				ex. quick changes to the rules
+		Notecards and Scissors
+			paper representations, write things down
+		Post its
+			notetaking and easily affix text to something
+		Whiteboard
+			added benefit of erasing things easily
+		Pipe cleaner and Lego blocks
+			create 3d representation of things
+		Notebook
+			help gather information while someone is playing the game
+			can gather nonverbal reactions/indicators
+	Examples
+		GUIs:
+			Menus - postit notes, users should find options intuitively
+				better for usecase study, help make sure how things are categorized are intuitive
+			Overlays - group related items, less pertinent information the furthest from the middle of the screen
+				ensures consistent style and coloration among related elements
+		Maps and Traversal
+			usability testing of physical environment
+			Geography
+				instead of entire game world, layout it out 2d using paper prototyping 
+				ensures users understand where to go from cues and that no unwinnable situations exist
+					bad bc it forces players to restart
+			prototype movement
+				indicate certain areas that can only be taken conditionally
+				player explore to obtain items for final desitnation
+				backtracking is not egregious and that application pairings are obvious
+					locks and keys
+	Playtesting
+		paper prototype fails to deliver on certain dynamics (harder for MDA approach)
+			fails to suprise someone
+		real time reactions are not the same
+			bc more of a description of what's happening
+		artisitic minutiae
+			harder to pick up on details, or a pattern with a monster
+		gravitas
+			not able to tell something is important because you just have scribbles on paper
+			not accurate presentation of how story affects
+		questions to ask
+			paths players are taking
+				understand first instinct and align with intended play
+					intution is rewarded
+			where/how player get stuck
+				stuck generally can lead to boredom which we want to avoid
+			exploration/navigation fun
+				if its fun to explore things in your game then that game should be about exploration
+				horror game, shouldn't try and make navigation fun
+	Use it for
+		understanding movement through space, compact and large
+		scope limited systems
+			how someone does attacks in turn based rpg
+			how someone spends money
+		how information is laid out and how eye looks for things
+			makes procedures smoother
+		wild ideas
+			whole level is a boss
+			out there idea for rule, concept
+	Should use for
+		tracking lots of information
+				humans aren't as consistent in calculations
+			large scale simulations
+			damage taken or mitigated
+			things with vast lookup tables
+		gauging behavior overtime and distance
+			rythm  and pace of play is differnet
+			decisions will be accepted instantly in paper prototyping 
+		understanding physical objects
+			can't tell if its difficult to run and move camera at the same (controller)
+	Summary
+		lightweight, low overhead, better for overall collaboration
+		tabletop games is basically the idea of paper prototyping
+
+
+
+** Formal Methods in Game Testing (10) ** 
+Playtesting is inviting criticism and hard but necessary
+gives outside perspectives on product and shows difficultly curves, if proper conveyance is given, and if it presents the information in an easily remembered way (teaching tools)
+	Circles of PlayTesters
+		You(designer)
+			person who see design elements evolve from infancy to final forms
+			incabable of creating accurate first impression
+				helicopter parent, biased
+				can't gauge difficulty curves, if it does proper conveyance
+			biased by back-end knowledge and idea of the game that exists in your mind
+				gives warped thinking of whats important and should be updated/fixed next
+		Trusted friends
+			put in front of people you know aren't afraid to hurt your feelings
+			people you communicate with well, clearly and unambiguously
+			target members that are also in the game design business
+				someone that break it down in MDA
+				relate it back to other games, and game mechanices
+			best subjective feedback
+		Acquaintances and others
+			associated with but not friends with
+				going to a gamestop in the mall or a game-con
+				going to a university and having randoms playtest it
+			used to generate first impressions
+			first group to imitate the real world feedback 
+			final circle where you expect to be face to face with audience
+		Internet, Anyone
+			throwing game to mass market and having anyone play
+			need automated survey, or have built in to game information (where they go, how do it, other performance data), anonoymity 
+			requires good data-gathering practices to get useful information
+	Methods of Playtesting
+		Informal Individual 
+			when you walk up to some random and ask them to play or having a friend play a game on your phone
+				very little lead up 
+			can fit in any type of time and place budget
+			lot less pressure to withdraw from playing if they don't like it
+			don't tell player too much
+				such as how to get past a level, puzzle
+				loses feedback if you do
+			don't lead player
+				backseat playing
+			dont argue or make excuses
+				if they say animation is bad or something, don't make excuses for it
+				makes them less likely to raise such criticisms later
+			take notes
+				what the actual feedback is
+				who played it, where it was played, when it was played
+					identify environmental aesthetics
+				(fi you have good read on the person) note underlying issue and severity, and propose a solution when they note a problem
+		Formal Individual
+			most academic overlap with CS
+				need to more objectively pros and cons for reason something was created
+			deep dive into a particular person's experience
+			more time and commitment agreement 
+			developers take care to simulate typical gameplay environment and remove all bias
+			playtester takes care to concentrate, analyze, and deliver unambiguous feedback so developer can understand what's being said
+			Procedure: 
+				set up a lab
+					place with few distractions
+				welcome playtester, thank for time
+				run the test, record the game screen, player actions and inputs, face experissions, audio from thinking out loud
+					log data somewhere permanent
+				thank playtester and ask for misc. feedback
+					background thoughts or anything not related to maybe what was going on right then
+				syncronize and analyze data streams
+		Formal group
+			lot of time and money
+			hard to coordinate
+			need good data management
+			whole bunch of people run through parallized playtest
+			good source of high volume useful feedback
+			scripts used to synchronize testers dealing with isolated groups
+				how to pull off usability studies
+			method for large development houses
+				blizzard, EA, Ubisoft
+					usually specific date and speed they want game down, so its a way to save time by spending money
+		Online
+			crowdsourcing a group 
+			differing levels of crowds
+				closed: certain number of invites
+				limited: also closed but like can bring plus 1
+				open: anyone and everyone
+					more for server stability, hardware feedback
+			large volume of feedback
+			most difficult to get meaningful information on
+				telementary purposes: what character/weapon is picked most, spend money on, npcs talked to
+	Specific Types of Testing
+		Marketabiltiy tests
+			focus testing
+				asking if the game appeals to them
+			interest polling
+				ask if there are different things you want to try that interest them
+		Gameplay tests
+			usability
+				ask someone to do something using interface and see if its natural and intutitve
+			QA
+				see if bugs pop up or gameplay errors
+			Automated
+				map loading: send AI controlled people all over map 
+	Be better playtester
+		think out loud
+			putting words to things you feel
+			stream of consciouss style talking
+				provides accurate timeline of feedback
+		reveal your biases
+			such as if you play a lot of certain genre
+		self analyze 
+			such as if you experience a certain feeling and what causes it
+			if bias are causing an atypical feeling
+		separate elements
+			animation is bad, but try to deliver more descriptive feedback
+				model jerks, center of gravity feels off, momentum comes out of nowhere, animation too fast in comparison to another time or frame
+		don't try and please developers
+			giving all the feedback you have
+				when you don't want to do something, struggle with another, did something else not very well
+
+
+** Guiding the Player **
+guide the player in what to do and how well they are doing it
+direction is any element that tries to alter the way a player plays the game
+	narrator, arrows, npcs
+	Direct instruction
+		directly addressing the player when pertinent
+			immediacy
+				how close is the instruction to what you need to act
+			scarcity
+				how often do you tell the player, less better to make moment stand out
+			brevity
+				how much time and space needed to give information, less better bc easier to remember
+			clarity
+				how clear, why they are doing
+			brevity and clarity conflic with each other
+				can brute force either by adding or removing word count of instruction
+		Instructions
+			using text, audio, or images that say specifically what to do
+				element based things
+				can set characterization, mood, 
+			text should be unobtrusive
+				perform a task with text given, should be able to see both
+			audion best devliered diegeticaly
+				instead of narrator popping up, best if character in game does the talking
+			images need good graphic design principles
+		Call to Action
+			inform tha player overall game mechanically and story wise
+			typically overarching goal, with mini objectives
+			incorporates 3 or 5 act story structure, especially 3 act
+		Map/Guidance system
+			symbolic marker directions on how to navigate 2 or 3d space, telling where you are, need to be, possibly path to get there
+			best for large spaces with sparce guidance
+			overuse incentivizes blind marker following, can cause non-engagement with narrative
+			should be used sparingly, general instruction, don't want player blinding following
+		Pop Ups
+			contextual media that appears to give instruction to current situation, highly pertinent info
+			immediate and obtrusive or general and unobstrusive
+			quick time events can be considered popups
+				entire genre out of it micro games
+	Indirect instruction
+		game design artistry
+		directing play by hiding influence within ambient design factors
+		negative methods
+			remove elements
+				focus camera on something specifically with exclusion to other things
+		positive
+			adding elements that lead the player somewhere
+				put princess on other side of dragon, meaning you need to fight it
+		constraints
+			conspicuous absence of design elements or possibility space
+				running right in mario brothers, try left runs into wall, which teaches you to only go right
+			gameplay space is culled to punish or disincentivize the perusal of suboptimal play
+			helps guide player choice toward what they should do through variety, depth, and interest
+				stimulating things to engage with mentally give voluntarily action to interact with
+				making you run towards the camera if there is something to outrun behind you
+					good indication of what the level is about to do
+		physical interface
+			use of periphals to suggest what someone should and shouldn't do
+				5th button on guitar for gutiar hero
+			negative
+				physical discomfort, mutual exclusion - not scoping and melee attacking at same time
+			positive
+				rumble strips
+		camera
+			negative method
+			visually exclude something
+				causes player to focus
+					explicit focus
+						game fly through on mario 64
+					implicit focus
+						giving player the idea that nothing below the camera is important, fixed camera
+			elements of contrast
+				brightness: players typically go towards light
+				Texture: change the way something looks texturally for hints on where to go
+				color: same as texture
+				directionality: the way the lines are heading/intersection with other lines 
+				Ex. carpet on the floor going in one direction, but not all over the floor
+		Goals
+			use of inherent or generated goals
+			sequencing
+				placing something you want but an enemy near it
+			foreshadowing
+				have something to build up to then pay off
+				seeing a dragon at the beginning and knowing later when you reach that area you'll get to fight that dragon
+			expansion
+				content beyond reach in early game areas
+				forces player to explore later game areas
+		player avatar
+			how the avatar is shaped and what they hold imply how game should be played
+			visually: bulk and sturdiness imply proximity and exporsure to danger
+			characters expectede to employ tools they carry
+			use their mechancial design to reward and guide players to greater challenges
+				healing, bonus xp, 
+		NPCs
+			stand in for the world and add intent
+			can communicate how appropriate the player's behavior is
+				Assasin's creed hiding in crowds
+			act as trial runs to show how to perform certian actions
+				show what would've happened if so and so happened
+			can generate contrast and direction through scarcity
+				no npcs but they show up when stuck on something
+					such as one showing up as a guide for a level
+		Audio Design
+			long term
+				set tone of scene
+			short term
+				interacting with something you can't or shouldn't
+				signify states such as grounded or in a state to perform next or different action
+				tell hits
+		Visual Design
+			Light
+				humans naturally drawn to light
+				both long term or instanteneous alerts
+				indication of where to go
+			Similarity
+				visually similiar objects probably have the same associations
+					rubies marked a color which correspond to gold or xp gaining
+			Trails
+				gatherable items
+					creates leap of faith moments
+						sonic rings, coins in mario games
+			Landmarks
+				physical embodiement of contrast
+				visually interesting and distinct objects that help orient player
+				generate interest
+			Arrows
+				weighted straigh lines
+				if multiple lines can converge that makes the area stand out to player
+				not very strong way of guiding players so best used with other things
+	Sequencing
+		guiding players from being novices to experts
+		Isolated introduction
+			player introduced to mechanic in simple environment with as many tries as they want
+			no distractions and unambiguous instructions
+		Expansion
+			add additional dimensions to a mechanic
+			restrictions loosened
+			guidance removed
+		Adding Danger
+			penalities and danger added so player has to actually solve problems
+			provides player with vector to grow and improve
+				lets players feel they are improving
+		Increased difficulty
+			go all out
+			make them perform mechanic with harsh conditions to display competentance 
+			maximize mechanical complexity

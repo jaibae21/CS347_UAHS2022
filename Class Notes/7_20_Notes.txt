@@ -1,0 +1,448 @@
+** From final review ** 
+use qualifiers for good or bad puzzle to determine what needs to be changed based on feedback
+pick genre of a puzzle and what its best practices are that you could use
+abnegation def
+identify modalities
+be able to tell what happens in each step of puzzle design or which ones are out of order
+
+** Puzzle Design (13) ** 
+Puzzle is fun and has a correct answer both parts neccessary
+fun no answer: more like a toy (goat sim, play around and cause destruction)
+correct answer no fun: like a quiz, feels like execution is being challenged
+focus is on mental challenges not fast reflexes
+	Make it fun
+		Novelty:
+			process of taking in the information, rules etc, you think about puzzle and stop when you have a flash inspiration about how to think or solve, and after the puzzle is solved
+			puzzle often requires flash of insight before solved
+			magnitude of uniqueness of inspiration is the novelty 
+				overwatch: need to move port for controller to get past a part
+			riddles, trick, questions: become devoid of content after novelty experienced
+				such as playing again
+			if you need a puzzle solved over and over again
+				add execution, reflex, or communication components to the design which determines input for the solution
+		Trickiness:
+			players come with a certain conception of standard play to a puzzle
+				use this against the player to make it trickier
+			too tricky and the player will feel as though their understanding of the game is not being rewarded
+				doing something you usually do for an entire game and it changing for something else
+					normal turn based game that turns into actual control of character for boss
+					makes skills you've built over gameplay seem pointless
+			not tricky enough will have obvious solution
+			examine preconceptions from the puzzle itself and not the entire game to gauge trickiness of puzzle
+				don't think you do this many times in game, so it should be obvious this is what you should do now
+		Appropriate Difficulty
+			puzzle match the player's skill, experience, and creativity
+			players perceive puzzle to be simple, less likely to give up
+			add medium difficulty standard solution or high difficulty advanced solution if this puzzle is important to the game
+			hints scattered throughout game world
+	Conveying right answer
+		need at least one correct answer and its intuitive to the player
+			movement based can have multiple correct answers
+		most games present puzzles as physical objects so that solutions are easily verifiable and intuitive
+			being able to move through a door
+			if not physical, use dialog or indicator of what you intend for the player to accomplish
+	Genres of Puzzles
+		Action
+			real time and typically includes physical movement
+			conventions: 
+				simple rules with time pressure
+					bejeweled
+				clear and obvious indicators of success/failure
+			best practice: 
+				allow players to make mistakes since we are dealing with time constraints
+				make proximity to failure condition clear
+		Story
+			require player to understand a fictional happening and intuit hidden information
+			Conventions:
+				difficulty modulated through number of characters and media
+				revolve around a who dun it or hidden object puzzle
+			Best practices:	
+				allow players to revisit old information
+				obvious incorrect answers to hone deductive skills
+					makes some puzzles easier
+					helps player gain an intuition of what isn't a correct answer, which can be used later in the game
+		Construction
+			Player given set of building blocks and create mechanism
+			creating some product, understanding how its done is how you gain mastery
+			Convention
+				some product from reagants
+				require certain number of products made in a row to avoid FOO strategies
+					ensures a stable creation
+			Best Practices
+				show solution as a shadowed version, name of what want accomplished
+				placing and moving items should both be impermanent and cheap
+					need to be able to use trial and error
+					lets them insert something back at a different step that they may have forgotten
+				these practices are about avoidning frustrations
+		Strategy
+			make series of moves where each has consequences long term
+				chess puzzle 
+			Conventions
+				take existing game and have solution obtained
+				limit time or move count which puts pressure to consider long term consequences of what you're doing
+			Best Practices
+				allow forward/backward buttons to allow players to scrub through their sequence
+					be able to start back at an intermediate step, like a checkpoint type thing
+				remove pieces or options that might distract the player
+					shadow illegal moves
+					allows players to get right to the decision making
+	Why ppl play Puzzles
+		challenge
+			overcoming structed challenge is fun
+				sudoku puzzles
+		abnegation
+			allows mind to rest by occupying it with low load tasks
+			allows you recuperate faster from something more mentally taxing
+		Character/Environment
+			following some story/journey that involves puzzles
+		spiritual journey
+			very dubious
+			some puzzles act as rights of passage and mimick hero's journey
+			come back from puzzles being more knowledgable in how to solve them
+	How they play
+		modality is the format in which the puzzle is presented and part of brain it excercises
+		three singular modalities that combine into multi-modality puzzles
+			clue
+		Word
+			understand meaning, spelling, composition of words
+			riddles, crossword
+		Image
+			processing, relating, understanding images
+			jigsaw
+		Logic
+			deduction type, field of possiblities and finding viable answer
+			clue
+		mixed modality integrate two or more
+			scrabble (word/image), riddles and puns (word/logic), sliding block mazes and lazer mazes (image/logic)
+	How we Design Puzzles
+		inspiration
+			generate idea for puzzle by finding interesting subject or pattern
+			figure out what your puzzle is about
+		simplification
+			take idea and isolate core mechanice, simplify controls
+		construction set
+			what makes the puzzle
+			figure out how to make constructing puzzles quick and easy
+		rules
+			define and clarify them
+			make them easily communicated
+		puzzles
+			generate whole bunch of puzzles, making as many different ones, valid approaches, variety of objective styles, end goals
+		testing
+			get feedback, refine teaching tools, figure difficulty 
+		sequence
+			use principle of sequencing to introduce puzzle concepts
+		presentation
+			refine visuals, interface, other media used to present puzzle to improve aesthetic appeal
+	How know puzzle is good
+		User friendly
+			approachable and rewarding
+			tricky and not obtuse
+		ease of entry
+			what they need to do and what they want to do
+			understand victory condition, tools they can use, and give general direction towards completing
+		instant feedback
+			react to player in way that is aesthitcally pleasing and little time delay
+		perputal motion
+			puzzle solved, player should have good time with it and want to solve another of same type
+		clear goals
+			goals required to complete puzzle should be clear
+			part of user friendly
+			can have advanced goals hidden from player
+		difficulty level
+			challenges (inscribed and cultural layer) should be modulated to match skills of new or advanced players
+		je ne sais quoi
+			"I don't know how to describe"
+			something sets game apart in players mind, a type of hook
+			lead player to think about game outside
+	Common Puzzle games
+		sliding blocks
+		physics puzzles
+			novel and can be tricky
+		traversal
+			action puzzles, requiring series of inputs
+		stealth
+			2d or 3d field that are forbidden at certain times
+		chain reactions
+			puzzles based on novelty spectacle, send car into traffic causing explosions
+		boss fights
+	Summary
+		puzzle design is not large departure from typical game development
+		shift moment to moment play for flashes of insight, larger dose of delayed gratification
+		core intrigue is the resolution of uncertainty
+		should use iterative design
+
+
+** Lenses of Players, Puzzles, Playtesting ** 
+maps a lense to particular player, puzzle or in playtesting
+	Player
+	understand who players are and what they want
+	how do we appeal to them
+	understand the product exists and is for them
+		Male
+			mastery, grading system on how well someone does
+			competition, player and some other entity in competition for some goal
+			destruction
+				things in environment can be destroyed, reshaped
+					battlefield
+			spatial puzzles
+				understand how something is 2d or 3d oriented in space and use knowledge to achieve specific condition
+			trial and error
+				instead of perfect all at once approach problem iteratively, allowing failure
+					precision platform genre
+					speed running - sort of giant trial and error
+		Female
+			emotion
+				create stories that hook players emotionally
+				pay off emotions in satisfying ways
+				allow cathersis
+				emotional validation for how we believe something should work
+			make it about real world and gamify it
+				sims - have wants, needs, go about world doing random things, is reminicinse 
+			nurturing
+				long term form of progression
+				farmville style game
+				stardew valley/harvest moon
+			dialogue/verbal
+				logic and words excersie those parts of brain
+			learning by example
+				initial indication of how user should start instead of kind of thrown in and needing to it all at once
+		Pleasing Players
+			particular base things we can include that really activates someone's brain
+			way to add reflexive attention grabbing elements
+			sensation
+				whatever shown in game is a novel and fulfilling sensation, appealing
+					casting fireball, channels and then shoot out rather than just a wand
+					destiny 2, WoW: reload animation, spell casting
+			fantasy
+				player can envision themselves as something they wish to be
+				deliever on a fantasy and it becomes more fun
+			narrative
+				elements of game all serve a purpose
+				small part of bigger whole
+			fellowship
+				ecnounter people that give sense of fellowship and belonging, base social
+			discovery
+				indulge in curiosity gives rewards long term or short term
+					Legend of Zelda: corox seeds that grant cumulative long term progress
+			expression
+				sneaky, agressive, cold-reserved, social: make all viable ways players can interact if it applies in game
+			submission
+				abnegation applied to mechanic
+				knowing something will work and come through for you
+			enough quality in primary appeal you get secondary appeal
+				side effects of well primary appeal
+				can try and make it upfront
+				anticpation
+					when something momentous is going to happen. give it enough buildup 
+						foreshadowing for story arc
+				completion
+					can achievably get the tasks complete, give reward
+				shard n frouda 
+					enjoy watching others suffer
+				generosity
+					people can help other people
+					MMO: give money to starter player
+				humour
+					game is funny and fun to interact with
+					short form, improvisational
+					identifying pattern and subverting or twisting expectations
+				possibility
+					anything they want to do is possible
+					open world with discoverable content
+				pride
+					accomplish something difficult then showcase that
+				give following emotion that is difficult to provide in real life
+					surprise
+					thrill
+					triumph 
+						long term goal
+					wonder
+						be overwhelmed by artistic expression
+	Puzzles
+	things that stop player and make them think
+	suffer from unrepeatability
+	delay gratification
+		Hint at solvibilty through progress
+			don't have puzzle sit until finished, have it be incrememntal
+			phsycially seeing how far you are will embolden you
+		Use perspective shifts sparingly and exhibit parallism 
+			make it so player be able to parse presentation of game logically
+		Pyramid Structure to invoke interest
+			hierachal model of what people want out of life, satisfy one moves up layer
+			physiological
+				getting out of danger situations
+			safety, social, esteem,
+			self actualization
+	Playtesting
+		genres of user involved group
+			focus group
+				representative sample group
+			quality testing
+				people skilled at pluming possibility spaces
+			usability
+				given interface perform tasks
+			in general playtest
+				give target audience game and record subjective reactions
+		playtest questions
+			why
+				how different demographics approach game
+				emergence is succeed by ...
+				ensure replayability
+				curate experiences
+					basic quality assurance of artistic vision behind game that results in subjective experience
+				fine tune way player navigates game
+					games heavily based on movement so that it feels inuitive
+				find and remove difficulty spikes
+			who
+				developers who can also understand how games designed
+				friends who can criticize without endangering relationship
+				experts accomplished in other games similar to yours
+				fresh meat people who have no experience with your game, most accurately represent mass market
+			where
+				different locations because environment affects different aesthetics
+				development place
+					easy to get all members of team present to watch, comment, and give discplianry look
+				playtest lab
+					devoid of distractions, controlled environment
+				public venues
+				playtester house
+					take home to most accurately simulate how it will be enjoyed 
+				online
+					max hardware being used
+			what play test for
+				look for specific experiences that we are expecting
+				find things not looking for
+					game implifications are properly sent out
+				emotional reaction
+				player mechanical
+			how
+				preserve feedback and don't bias player
+				prime player as little as possible to get genuine reaction
+				record body language and facial expression
+				auto record data
+				player disturbance policy
+					what needs to happen in the game for a developer to step in
+
+
+** Lens of Stories and Characters **
+	Stories
+		neccessatate different story approach from other media
+		beads on a string
+			two small forks in road that reconvene on same path later
+		story machine
+			create independent narrative elements in world
+			player can interact how they choose
+			player made story arises
+			try to generate story telling world and system that allows elements to build on each other
+			premise and setting is locked
+				can have small selective premise such as character background
+			elements given different visuals and mechanics
+			plots
+				start, action in middle, ending
+				all three react to player
+		want to simulate both
+			problem with trying to do
+				good story craft beads collectively
+					character arcs, interest curves, rate of informatino delivered
+				allow player to interact in arbitary sequence then order will be scrambled and random
+			cognitorial explosion
+				lot more choices to keep track of
+			endings adapt poorly to middle path scenerio
+				in story machine, there isn't a singular ending to talk about
+			fast and urn alternative experiences
+				game with multiple endings, you'll want to play again to find different ending
+				have to balance how fast other endings are accomplised
+					too quick no gravitous
+					too slow will frustrate and have player redo challenges they've already overcome
+			insufficent freeform verbs
+				verb: methods to interact with world, procedures
+				problem games have freeform verbs within a specific focus
+					such things that only pertain to combat whereas story machine would have combat, exploration, etc
+			time travel
+				impermance of choices 
+					reset from save
+		cheap ways to simulate middle path
+			not let player think about
+				stories you create vary problem solving and surprise
+				break rules and have you consider what's possible
+			create situations you yourself understand
+				more you understand it the better you can express emotions with it
+			provide simplicity and transcendence
+				take complexity of real situation and make it simpler and give player more power than they had
+					medieval time: can use modern understanding
+					future: gives better degree of transcendence
+						meeting different species v people, planets v towns
+					war: reduce complexity of daily life
+						need to beat them before they beat us
+					modern world: transcendence feels more applicable to daily lives
+					abstract situations: simplify scope and give laser focus to something (ex feeling)
+			monomyth
+				already proved to kinda give engagement
+				trials: makes up 75% of it
+			make story punching bag
+				bend story make mechanics work
+			make story consistent
+				if you're bending the story make sure it still makes sense
+			make story accessible
+				establish what you're building off of
+					
+				establish twist you've put on it
+			angle expectations to player experience
+			identify weirdest thing and tie back to it 
+		can still use non interactive parts to tell story
+			traditional media allows audeience involvement but game needs it
+		economic view presence of branching execution paths accounts for what the player
+			how obtrusively can you railroad player
+		Top Down
+			linear rpg, beads on string
+		Bottom up 
+			feed a bunch of interesting interactions that can happen and player explores them 
+	Characters
+		special considerations bc we experience through 3rd person view and typically have to perform non-story interactions
+		make simple, more external and visual
+		take traditional story roles and mapping to game characters
+		strong consistent characters provide quality to the story regardless of individual dynamics of play
+		Trends
+			mental things made physical
+				directly express what's happening through visual and sound
+				helps players make real time decisions
+			less realistic more fantastical 
+				takes just as long to make fantastical skeleton as does a real one
+			complicated things made simple
+				increases range of possible situations
+				simple takes less development time
+				compllication can give feelings of disempowerment
+					character wouldn't do this cause it/he felt like that
+		Avatar
+			good bc you can kinestically project onto them
+			thinking I did rather than he did
+		Blank slate
+			more character is designed less player can project onto them and feel they are driving the story
+		take typical archetype character of story and map them onto specific things that need to happen in game
+			hero v hostage: can be physical thing you need to accomplish using mechanics
+			mentors, tutors:
+			minion, bosses, antagonist: present as challenges player has to overcome
+			try to be novel about it by combining, separating, and abstracting different types
+		split information by diegetic and non, direct v indirect
+		distill characters into lists of versatile traits that can be applied in many situations
+			try to make personality, mechanics and narrative tie together
+		Intrapersonal Circumplex
+			looks really intimidating
+			function of two inputs and one output
+				Character A and B (when A thinks about B, friendly or hostile), sub or dom
+				find position on graph and output is adjective that describes how A thinks about B
+		Character Web
+			graph that list characters and how related
+			proximity inversely proportional to how close they are
+			gives most natural way two characters might interact
+			way of generating new interactions
+		How does status affect them
+		Dont underestimate voice and face
+			allow distinct voice so they feel more real
+		Allow characters to transform
+		Avoid uncanny valley
+			people like things more the more anthrmorphized they are 
+			linear relationship where things are very human but not quite human where you dip down (uncanny valley) and get negative response before you pull back up on other side
+				clouds, animatronic mascots, cgi movies (polar express)
+				happens when you characters are almost lifelike but something prevents them from fully hitting the peak of realism
